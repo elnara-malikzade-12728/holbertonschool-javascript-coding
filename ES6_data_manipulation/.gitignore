@@ -1,4 +1,5 @@
 package-lock.json
+nodesource_setup.sh
 **/node_modules/
 **/nodesource_setup.sh
 *~
