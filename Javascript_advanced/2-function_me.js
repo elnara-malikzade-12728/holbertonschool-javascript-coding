@@ -1,6 +1,13 @@
 function welcomeMessage(fullName) {
-    alert('Welcome ' + fullName);
+    return function () {
+        alert('Welcome ' + fullName);
+    }
 }
-const guillame = welcomeMessage('Guillaume');
+
+const guillaume = welcomeMessage('Guillaume');
 const alex = welcomeMessage('Alex');
 const fred = welcomeMessage('Fred');
+
+guillaume();
+alex();
+fred();
