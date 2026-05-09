@@ -21,14 +21,14 @@ function countPrimeNumbers() {
     return count;
 }
 
-module.exports = countPrimeNumbers;
-
 const start = performance.now();
 countPrimeNumbers();
 const end = performance.now();
 
+module.exports = countPrimeNumbers;
+
 console.log(
-    "Execution time of printing countPrimeNumbers was " +
+    'Execution time of printing countPrimeNumbers was ' +
     (end - start) +
-    " milliseconds"
+    ' milliseconds'
 );
