@@ -25,8 +25,6 @@ const start = performance.now();
 countPrimeNumbers();
 const end = performance.now();
 
-module.exports = countPrimeNumbers;
-
 console.log(
     'Execution time of printing countPrimeNumbers was ' +
     (end - start) +
