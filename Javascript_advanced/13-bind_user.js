@@ -13,4 +13,4 @@ const user = {
 
 }
 const bindLogWelcomeUser = user.logWelcomeUser.bind(user);
-bindLogWelcomeUser('Welcome');
+bindLogWelcomeUser('Hello');
