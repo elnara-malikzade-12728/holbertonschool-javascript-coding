@@ -27,3 +27,4 @@ const end = performance.now();
 const timeUsed = end - start;
 
 console.log(`Execution time of printing countPrimeNumbers was ${timeUsed} milliseconds`);
+module.exports = countPrimeNumbers;
