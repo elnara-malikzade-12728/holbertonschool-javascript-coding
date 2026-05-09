@@ -8,7 +8,7 @@ const user = {
     occupation: 'Engineer',
 
     logWelcomeUser(welcomeString){
-        console.log(welcomeString + ' ' + user.firstName + `. Your occupation is: ` + user.occupation)
+        console.log(welcomeString + ' ' + this.firstName + `. Your occupation is: ` + this.occupation)
     }
 
 }
