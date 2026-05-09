@@ -1,9 +1,8 @@
 const { performance } = require('perf_hooks');
 
-const start = performance.now();
-
 function countPrimeNumbers() {
     let count = 0;
+
     for (let i = 2; i <= 100; i++) {
         let isPrime = true;
 
@@ -21,10 +20,15 @@ function countPrimeNumbers() {
 
     return count;
 }
+
+module.exports = countPrimeNumbers;
+
+const start = performance.now();
 countPrimeNumbers();
 const end = performance.now();
 
-const timeUsed = end - start;
-
-console.log(`Execution time of printing countPrimeNumbers was ${timeUsed} milliseconds`);
-module.exports = countPrimeNumbers;
+console.log(
+    "Execution time of printing countPrimeNumbers was " +
+    (end - start) +
+    " milliseconds"
+);
