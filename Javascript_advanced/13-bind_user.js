@@ -8,9 +8,9 @@ const user = {
     occupation: 'Engineer',
 
     logWelcomeUser(welcomeString){
-        console.log(welcomeString + ' ' + this.firstName + `. Your occupation is: ` + this.occupation)
+        return (welcomeString + ' ' + this.firstName + '. Your occupation is: ' + this.occupation)
     }
 
 }
 const bindLogWelcomeUser = user.logWelcomeUser.bind(user);
-bindLogWelcomeUser('Hello');
+console.log(bindLogWelcomeUser('Hello'));
