@@ -8,7 +8,6 @@ function countPrimeNumbers() {
     }
     return count;
 }
-console.log(countPrimeNumbers());
 const end = performance.now();
 const timeUsed = end - start;
 console.log(`Execution time of printing countPrimeNumbers was ${timeUsed} milliseconds`);
