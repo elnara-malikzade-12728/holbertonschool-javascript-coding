@@ -18,17 +18,17 @@ function main() {
 
     const spookyButton = document.createElement('button');
     spookyButton.textContent = 'Spooky';
-    spookyButton.addEventListener('click', spooky);
+    spookyButton.onclick = spooky;
     document.body.appendChild(spookyButton);
 
     const darkModeButton = document.createElement('button');
     darkModeButton.textContent = 'Dark mode';
-    darkModeButton.addEventListener('click', darkMode);
+    darkModeButton.onclick = darkMode;
     document.body.appendChild(darkModeButton);
 
     const screamModeButton = document.createElement('button');
     screamModeButton.textContent = 'Scream mode';
-    screamModeButton.addEventListener('click', screamMode);
+    screamModeButton.onclick = screamMode;
     document.body.appendChild(screamModeButton);    
 
 }
